@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЖК «Символ» — комфорт и современные технологии</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+
+        /* Шапка */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* О ЖК */
+        .about {
+            padding: 60px 0;
+            text-align: center;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .feature {
+            width: 22%;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        /* Планировки */
+        .flats {
+            background: #f9f9f9;
+            padding: 60px 0;
+        }
+        .flat-plans {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .flat-card {
+            width: 30%;
+            min-width: 250px;
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .flat-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .flat-info {
+            padding: 20px;
+        }
+
+        /* Контакты */
+        .contacts {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        /* Форма */
+        .form-block {
+            background: #34495e;
+            color: white;
+            padding: 60px 0;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Подвал */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с заголовком -->
+    <header>
+        <div class="container">
+            <h1>ЖК «Символ»</h1>
+            <p>Современные квартиры и технологии строительства</p>
+            <a href="#form" class="btn">Оставить заявку</a>
+        </div>
+    </header>
+
+    <!-- О ЖК -->
+    <section class="about">
+        <div class="container">
+            <h2>О жилом комплексе</h2>
+            <p>ЖК «Символ» — это новый стандарт комфорта. Расположен в районе с развитой инфраструктурой. Сдача — 1 квартал 2026 года.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="Паркинг">
+                    <h3>Наземный паркинг</h3>
+                    <p>Удобные места для вашего автомобиля</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="Двор">
+                    <h3>Закрытая территория</h3>
+                    <p>Озеленение и детские площадки</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="Ремонт">
+                    <h3>Отделка от застройщика</h3>
+                    <p>Чистовая отделка в каждой квартире</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="Инфраструктура">
+                    <h3>Всё рядом</h3>
+                    <p>Школы, сады, ТЦ в шаговой доступности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Планировки -->
+    <section class="flats">
+        <div class="container">
+            <h2 style="text-align: center;">Выберите свою квартиру</h2>
+            
+            <div class="flat-plans">
+                <div class="flat-card">
+                    <img src="https://via.placeholder.com/300x200" alt="1-комнатная">
+                    <div class="flat-info">
+                        <h3>1-комнатная</h3>
+                        <p>Площадь: 33 м²</p>
+                        <p>Цена: от 2 805 000 ₽</p>
+                        <a href="#form" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="flat-card">
+                    <img src="https://via.placeholder.com/300x200" alt="2-комнатная">
+                    <div class="flat-info">
+                        <h3>2-комнатная</h3>
+                        <p>Площадь: 50 м²</p>
+                        <p>Цена: от 4 100 000 ₽</p>
+                        <a href="#form" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="flat-card">
+                    <img src="https://via.placeholder.com/300x200" alt="3-комнатная">
+                    <div class="flat-info">
+                        <h3>3-комнатная</h3>
+                        <p>Площадь: 80 м²</p>
+                        <p>Цена: от 6 400 000 ₽</p>
+                        <a href="#form" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Локация -->
+    <section class="about">
+        <div class="container">
+            <h2>Удобное расположение</h2>
+            <p>ЖК расположен в районе с развитой инфраструктурой: 5 минут до центра.</p>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a5d... (ваш код карты)" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <!-- Форма -->
+    <section id="form" class="form-block">
+        <div class="container">
+            <h2 style="text-align: center; color: white;">Оставьте заявку</h2>
+            <p style="text-align: center;">Менеджер свяжется с вами для подбора квартиры</p>
+            
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <select style="width: 100%; padding: 10px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                    <option>Интересует 1-комнатная</option>
+                    <option>Интересует 2-комнатная</option>
+                    <option>Интересует 3-комнатная</option>
+                </select>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>© 2024 ЖК «Символ». Официальный сайт застройщика.</p>
+            <p>Телефон: <a href="tel:+78005553535" style="color: white;">8 905 447 3978</a></p>
+        </div>
+    </footer>
+</body>
+</html>
